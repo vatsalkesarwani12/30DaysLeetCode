@@ -55,3 +55,15 @@ class Solution {
     }
 }
 ```
+
+# Code [Accepted]
+```
+public void deleteNode(ListNode node) {
+    node.val = node.next.val;
+    node.next = node.next.next;
+}
+```
+## Complexity Analysis
+```
+Time and space complexity are both O(1).
+```
